@@ -1,0 +1,15 @@
+# Nimbrella provides a complete template with all default values set.
+# (https://docs.nimbella.com/configuration/)
+
+packages:
+  - name: package
+    functions:
+      - name: function
+        runtime: "nodejs:18"
+        # Function will authenticate using a custom secret in
+        # `X-Require-Whisk-Auth: <SECRET>` HTTP header when Secure Web
+        # Function is enabled. Disabled by default.
+
+        # webSecure: 'A_VERY_SECRET_SECRET'
+environment:
+  DATABASE_URL: "${DATABASE_URL}"
