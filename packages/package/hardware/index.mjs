@@ -1,12 +1,13 @@
 export function main(args) {
-  const { action } = args;
+  const { event } = args;
 
   return {
     body: {
-      action
+      constant: constant,
+      event
     },
     headers: {
-      action
+      event
     },
     statusCode: 200
   };
