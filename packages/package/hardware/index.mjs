@@ -3,7 +3,6 @@ export function main(args) {
 
   return {
     body: {
-      constant: constant,
       event
     },
     headers: {
