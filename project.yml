@@ -1,7 +1,7 @@
 packages:
   - name: package
     functions:
-      - name: function
+      - name: hardware
         runtime: "nodejs:18"
 environment:
   DATABASE_URL: "${DATABASE_URL}"
